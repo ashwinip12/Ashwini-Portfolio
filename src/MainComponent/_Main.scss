@@ -1,0 +1,35 @@
+@import '../global.scss';
+
+.Main-container {
+    display: flex;
+    width: 100%; 
+    /* Ensure main container takes full width */
+    height: 500px;
+}
+
+.left-image {
+    display: flex; 
+    background-color: $header-left-footer; /* Same color as header-left */
+    padding: 2rem;
+    width: 40%; /* Set to 40% for left side */
+    justify-content: center;
+    
+}
+
+.Main-right {
+    display: flex;
+    flex-direction: column;
+    background-color: $header-right; /* Same color as header-right */
+    width: 60%; /* Set to 60% for right side */
+}
+
+.greet {
+    font-size: 2rem;
+    font-family: $main-font;
+    text-align: start;
+    padding: 1rem;
+}
+
+.summary {
+    font-family: $normal-font;
+}

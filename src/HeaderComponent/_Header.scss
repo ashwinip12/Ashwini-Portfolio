@@ -10,6 +10,8 @@
     display: flex; 
     background-color: $header-left-footer;
     padding: 2rem;
+    width: 40%; /* Set to 40% for left side */
+    
 }
 
 .logo {
@@ -17,28 +19,30 @@
     font-size: 69px;
     line-height: 62px;
     justify-content: end;
-    margin-right: 19rem; /* Adjust this as needed for spacing */
+    margin-right: 19rem; 
 }
 
 .header-right {
-    display: flex; /* Use flexbox for nav links */
+    display: flex;
     background-color: $header-right;
-    flex-grow: 1; /* Allow this section to grow and occupy remaining space */
+    flex-grow: 1; 
+    width: 60%; /* Set to 60% for right side */
 }
 
 .nav-links {
     display: flex;
     flex-direction: row;
     align-items: center; 
-    justify-content: flex-end; /* Align links to the right */
+    justify-content: flex-end; 
 }
 
 .nav-links a {
-    margin: 0 1rem; /* Add horizontal space between links */
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit color from parent */
+    margin: 0 1rem; 
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .nav-links a:hover {
-    text-decoration: underline; /* Underline on hover for better UX */
+    text-decoration: underline; 
 }
+

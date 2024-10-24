@@ -1,0 +1,44 @@
+@import "../global.scss";
+
+.header-container {
+    display: flex;
+    margin: 0; 
+    width: 100%;
+}
+
+.header-left {
+    display: flex; 
+    background-color: $header-left-footer;
+    padding: 2rem;
+}
+
+.logo {
+    font-family: $logo-font;
+    font-size: 69px;
+    line-height: 62px;
+    justify-content: end;
+    margin-right: 19rem; /* Adjust this as needed for spacing */
+}
+
+.header-right {
+    display: flex; /* Use flexbox for nav links */
+    background-color: $header-right;
+    flex-grow: 1; /* Allow this section to grow and occupy remaining space */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    justify-content: flex-end; /* Align links to the right */
+}
+
+.nav-links a {
+    margin: 0 1rem; /* Add horizontal space between links */
+    text-decoration: none; /* Remove underline from links */
+    color: inherit; /* Inherit color from parent */
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}

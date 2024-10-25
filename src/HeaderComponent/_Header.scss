@@ -1,48 +1,48 @@
 @import "../global.scss";
-
 .header-container {
     display: flex;
-    margin: 0; 
     width: 100%;
+    height: 80px; 
 }
 
 .header-left {
-    display: flex; 
-    background-color: $header-left-footer;
-    padding: 2rem;
     width: 40%; 
-    
-}
+    background-color: $header-left-footer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-.logo {
-    font-family: $logo-font;
-    font-size: 69px;
-    line-height: 62px;
-    justify-content: end;
-    margin-right: 19rem; 
+    .logo {
+        h1 {
+            color: #161010;
+            font-family: 'Pacifico', cursive;
+            font-size: 2.5rem;
+        }
+    }
 }
 
 .header-right {
+    width: 60%;
+    background-color:$header-right; 
     display: flex;
-    background-color: $header-right;
-    flex-grow: 1; 
-    width: 60%; /* Set to 60% for right side */
-}
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 2rem; 
 
-.nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center; 
-    justify-content: flex-end; 
-}
+    .nav-links {
+        display: flex;
+        gap: 1.5rem; 
+        margin-right: 400px;
+        a {
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif; 
+            color: #0a0a0a;
+            font-size: 1.1rem; 
+        }
 
-.nav-links a {
-    margin: 0 1rem; 
-    text-decoration: none; 
-    color: inherit; 
+        a:hover {
+            color: #471045; 
+            text-decoration:underline, wavy;
+        }
+    }
 }
-
-.nav-links a:hover {
-    text-decoration: underline; 
-}
-

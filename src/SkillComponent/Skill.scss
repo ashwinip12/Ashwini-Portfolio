@@ -1,20 +1,23 @@
-@import '../global.scss';
+@import "../global.scss";
 
-.Skill-container
-{
- background-color: $skills;
- height: 300px;
+.Skill-container {
+    background-color: $skills; 
+    height: 400px; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-.title
-{
-  font-family: $main-font;
-   margin-right: 1000px;
-   padding: 30px;
-   font-size: 30px;
+
+.title {
+    margin-bottom: 20px;
 }
-.image
-{
-   width: 200px;
-   height: 200px;
-   margin-left: 500px;
+
+.image {
+    img {
+        max-width: 100%; 
+        height: auto; 
+    }
 }

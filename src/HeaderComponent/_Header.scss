@@ -1,48 +1,104 @@
+
+
 @import "../global.scss";
-.header-container {
+.body-container {
+  display: flex;
+  justify-content: space-between;
+  height: 70vh;
+  
+  
+  .left-section {
+    width: 40%;
     display: flex;
-    width: 100%;
-    height: 80px; 
-}
-
-.header-left {
-    width: 40%; 
-    background-color: $header-left-footer;
-    display: flex;
-    align-items: center;
+    flex-direction: column;
     justify-content: center;
-
-    .logo {
-        h1 {
-            color: #161010;
-            font-family: 'Pacifico', cursive;
-            font-size: 2.5rem;
-        }
-    }
-}
-
-.header-right {
-    width: 60%;
-    background-color:$header-right; 
-    display: flex;
-    justify-content: flex-end;
     align-items: center;
-    padding-right: 2rem; 
-
-    .nav-links {
-        display: flex;
-        gap: 1.5rem; 
-        margin-right: 400px;
-        a {
-            text-decoration: none;
-            font-family: 'Montserrat', sans-serif; 
-            color: #0a0a0a;
-            font-size: 1.1rem; 
-        }
-
-        a:hover {
-            color: #471045; 
-            text-decoration:underline, wavy;
-        }
+    background-color: $header-left-footer;
+    
+    .left-section-top p{
+        margin-top: -130px;
+        font-family: $logo-font;
+        font-weight: bold;
+        font-size: 40px;
     }
+    .plant {
+      display: flex;
+     justify-content: center;
+  
+     margin-bottom: 2rem;
+      flex-direction: row;
+
+      .plant {
+        width: 100px; 
+        margin-right: 1rem;
+        
+      }
+
+      .books {
+        width: 80px;
+      }
+    }
+    .computer-screen {
+      img {
+        width: 50px; 
+      }
+    }
+  }
+
+  .right-section {
+    width: 60%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #0c0c0c;
+    background-color: $header-right;
+
+
+.nav-links {
+      margin-top:0rem;
+      display: flex;
+    flex-direction: row;
+     gap:2rem;
+      margin-bottom: 1rem;
+      margin-left: 100px;
+      
+
+      a {
+        font-family: 'Montserrat', sans-serif;
+        color: #333;
+        font-size: 1.1rem;
+        transition: color 0.3s;
+        margin-top: -110px;
+        
+        &:hover {
+          color: #5a2362;
+          text-decoration:wavy;
+        }
+      }
+    }
+    .intro {
+      font-size: 1.5rem;
+      color: #110e0e;
+    
+
+      .name {
+        font-family: 'Pacifico', cursive;
+        color: #43b3ae; 
+          margin-right:580px;
+      }
+    }
+
+    .main-text {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+      color: #333;
+      
+
+      .highlight {
+        color: #43b3ae; 
+      }
+    }
+  }
 }

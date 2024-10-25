@@ -1,7 +1,10 @@
 import './App.css';
+import { Certificate } from './CertificateComponent/Certificate';
+import Footer from './FooterComponent/Footer';
 import Header from './HeaderComponent/Header';
 import {Main} from './MainComponent/Main';
-import Blog from './ProjectComponent/ProjectCard';
+import { Project } from './ProjectComponent/Project';
+
 import { Skill } from './SkillComponent/Skill';
 
 function App() {
@@ -10,7 +13,9 @@ function App() {
       <Header/>
      <Main/>
      <Skill/>
-     <Blog/>
+     <Project/>
+     <Certificate/>
+   <Footer/>
     </div>
   );
 }

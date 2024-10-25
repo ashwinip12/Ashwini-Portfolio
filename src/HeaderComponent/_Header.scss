@@ -4,7 +4,7 @@
 .body-container {
   display: flex;
   justify-content: space-between;
-  height: 70vh;
+  height: 100vh;
   
   
   .left-section {
@@ -16,7 +16,7 @@
     background-color: $header-left-footer;
     
     .left-section-top p{
-        margin-top: -130px;
+        margin-top: -240px;
         font-family: $logo-font;
         font-weight: bold;
         font-size: 40px;
@@ -69,11 +69,12 @@
         color: #333;
         font-size: 1.1rem;
         transition: color 0.3s;
-        margin-top: -110px;
+        margin-top: -210px;
         
         &:hover {
           color: #5a2362;
-          text-decoration:wavy;
+          text-decoration:underline;
+          text-decoration-style: wavy;
         }
       }
     }

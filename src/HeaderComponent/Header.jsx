@@ -2,7 +2,7 @@
 import React from 'react';
 import './_Header.scss';
 import shelf from './image/shelf.svg';
-import lamp1 from './image/lamp.svg';
+import lamp from './image/lamp.svg';
 import computer from './image/computer.svg';
 const Header = () => {
   return (
@@ -12,7 +12,7 @@ const Header = () => {
       <div className="left-section-top">
       <p>Ashwini</p></div>
         
-          <img src={lamp1} alt="lamp" className="lamp" />
+          <img src={lamp} alt="lamp" className="lamp" />
          <img src={shelf} alt="shelf" className="shelf" />
         <div className="computer-screen">
           <img src={computer} alt="Computer"  />
@@ -31,7 +31,7 @@ const Header = () => {
         <div className="desription"></div>
         <p className="intro"> 👋Hi, I'm <span className="name">Ashwini</span></p>
         <h1 className="main-text">
-         Diving into coding with a focus on <span className='highlight'>creating</span> <span className='highlight'>engaging</span> and <span className='highlight'>interactive </span> things. Every project is a chance to learn something new, and I’m here to share it all!
+         Diving into coding with a focus on <span className='highlight'>creating ,</span> <span className='highlight'>engaging</span> and <span className='highlight'>interactive </span> things. Every project is a chance to learn something new, and I’m here to share it all!
         </h1>
          </div>
 

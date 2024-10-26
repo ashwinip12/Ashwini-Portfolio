@@ -1,22 +1,84 @@
+
+@import '../global.scss';
 .footer{
  background-color:rgb(218, 206, 194);
- height: 20vh;
+ height: 600px;
  align-content:center;
  position: relative;
-}
-a{
+  padding:30px ;
 
-color:black;
- display: flex;
- flex-direction:column;
- 
-}
-
-@media (min-width:500px)
+.box
 {
-  .footer{
-    height: 10vh;
-    align-items: center;
-   }
+background-color: rgb(253, 249, 247);
+ width: 80%;
+ height: 500px;
+//  padding: 20px;
+  margin-left: 170px;
+
+}
+.intro1
+{
+padding: 100px;
+  color: black;
+  font-size: 20px;
+  margin-right:700px ;
+  
+}
+
+.main-text1
+{
+margin-top: -79px;
+  font-size: 20px;
+  margin-right:480px ;
+  .highlight1
+  {
+    color:red;
+  }
+   .highlight1:hover
+   {
+    text-decoration: underline;
+    }
+  
+  h5{
+    color: black;
+    font-size: 20px;
+    margin-right: 140px;
+  }
+  
+  .image1 {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+
+      .pop-up1 {
+        width: 50px;
+        height: 50px;
+        
+      }
+      .pop-up2
+      {
+       width: 40px;
+        height: 36px;
+        margin-right: 320px;
+        
+      
+      }
+    }
+  
+}
+.pop-up{
+
+margin-left: 600px;
+margin-top: -230px;
+}
+.last-name
+{
+  font-size: 50px;
+  font-weight: bold;
+  margin-right: 900px;
+  font-family: $logo-font;
+  margin-top: -20px;
+
+}
 
 }

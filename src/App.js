@@ -15,7 +15,7 @@ function App() {
      <Skill/>
      <Project/>
      <Certificate/>
-   <Footer/>
+     <Footer/>
     </div>
   );
 }

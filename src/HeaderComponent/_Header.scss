@@ -1,92 +1,112 @@
 
 
 @import "../global.scss";
+
 .body-container {
   display: flex;
   justify-content: space-between;
   height: 100vh;
-  
-  
+
   .left-section {
     width: 40%;
-    display: flex;
-    flex-direction: column;
+    
+     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $header-left-footer;
-    
-    .left-section-top p{
-        margin-top: -240px;
+
+    .left-section-top {
+     
+      justify-content: center;
+       align-items: flex-start;
+     
+
+      p {
+       
         font-family: $logo-font;
         font-weight: bold;
-        font-size: 40px;
-    }
-    .plant {
-      display: flex;
-     justify-content: center;
-  
-     margin-bottom: 2rem;
-      flex-direction: row;
+        font-size: 3rem;
 
-      .plant {
-        width: 100px; 
-        margin-right: 1rem;
-        
-      }
-
-      .books {
-        width: 80px;
-      }
-    }
-    .computer-screen {
-      img {
-        width: 50px; 
+        &:hover {
+          color: #5a2362;
+          text-decoration-style: wavy;
+        }
       }
     }
   }
+    
+     
+
+      .lamp  {
+        width: 100px;
+        margin-left: 400px;
+        margin-top: -40px;
+       
+
+      }
+    
+     .shelf  {
+       
+        margin-left: 50px;
+         margin-top: 10px;
+          
+          height: auto;
+          max-width: 200px;
+
+      }
+
+    .computer-screen img {
+    // margin-top: 10px;
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+   margin-left: 230px;
+   margin-top: -200px;
+}
+
+  
 
   .right-section {
     width: 60%;
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: #0c0c0c;
     background-color: $header-right;
 
-
-.nav-links {
-      margin-top:0rem;
+    .nav-links {
       display: flex;
-    flex-direction: row;
-     gap:2rem;
-      margin-bottom: 1rem;
-      margin-left: 100px;
+      flex-direction: row;
+      gap: 2rem;
       
+       margin-left: 400PX;
+      justify-content: flex-start;
 
       a {
         font-family: 'Montserrat', sans-serif;
         color: #333;
         font-size: 1.1rem;
         transition: color 0.3s;
-        margin-top: -210px;
-        
+        margin-top: -170px;
+       
+
         &:hover {
           color: #5a2362;
-          text-decoration:underline;
+          text-decoration: underline;
           text-decoration-style: wavy;
         }
       }
     }
-    .intro {
-      font-size: 1.5rem;
-      color: #110e0e;
-    
 
+    .intro {
+       font-size: 1.5rem;
+      color: #110e0e;
+      margin-bottom: 1rem;
+    }
       .name {
         font-family: 'Pacifico', cursive;
-        color: #43b3ae; 
-          margin-right:580px;
+        color: #43b3ae;
+        font-size: 2rem;
       }
     }
 
@@ -95,11 +115,11 @@
       font-weight: bold;
       line-height: 1.2;
       color: #333;
-      
+      margin-left: 100px;
 
       .highlight {
-        color: #43b3ae; 
+        color: #43b3ae;
       }
     }
   }
-}
+

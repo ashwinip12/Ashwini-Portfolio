@@ -2,6 +2,7 @@
  background-color:rgb(218, 206, 194);
  height: 20vh;
  align-content:center;
+ position: relative;
 }
 a{
 
@@ -9,4 +10,13 @@ color:black;
  display: flex;
  flex-direction:column;
  
+}
+
+@media (min-width:500px)
+{
+  .footer{
+    height: 10vh;
+    align-items: center;
+   }
+
 }

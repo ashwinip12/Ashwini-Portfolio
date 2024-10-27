@@ -6,7 +6,7 @@ import lamp from './image/lamp.svg';
 import computer from './image/computer.svg';
 const Header = () => {
   return (
-    <div className="body-container">
+    <div className="header">
     
       <div className="left-section">
       <div className="left-section-top">
@@ -28,13 +28,13 @@ const Header = () => {
           <a href="#playing">playing</a>
         </div>
         
-        <div className="desription"></div>
-        <p className="intro"> 👋Hi, I'm <span className="name">Ashwini</span></p>
-        <h1 className="main-text">
-         Diving into coding with a focus on <span className='highlight'>creating ,</span> <span className='highlight'>engaging</span> and <span className='highlight'>interactive </span> things. Every project is a chance to learn something new, and I’m here to share it all!
+        <div className="header-description">
+        <p className="header-intro"> 👋Hi, I'm <span className="name">Ashwini</span></p>
+        <h1 className="header-maintext">
+         Diving into coding with a focus on <span className='highlight'>creating </span> <span className='highlight'>engaging</span> and <span className='highlight'>interactive </span> things. Every project is a chance to learn something new, and I’m here to share it all!
         </h1>
          </div>
-
+</div>
     </div>
   );
 };

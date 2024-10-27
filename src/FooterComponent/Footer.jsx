@@ -7,19 +7,19 @@ const Footer=()=>{
 
   return (
     <div className='footer'>
-     <div className='box'>
-        <p className="intro1">I’m always up for a chat.</p>
-        <div className="main-text1">
-<p><span className='highlight1'>Pop me an email</span> at ashwinibms2020@gmail.com </p>
+     <div className='footer-container'>
+        <p className="footer-intro">I’m always up for a chat.</p>
+        <div className="footer-maintext">
+<p><span className='footer-highlight'>Pop me an email</span> at ashwinibms2020@gmail.com </p>
 <h5>or give shoutout on social media.</h5>
         
-        <div className='image1'>
-        <img src={email} alt="pop-up" className="pop-up1"></img>
-        <img src={linkedin} alt="pop-up" className="pop-up2"></img>
+        <div className='footer-image'>
+        <img src={email} alt="illustration" className="footer-img1"></img>
+        <img src={linkedin} alt="illustration" className="footer-img2"></img>
         </div>
         </div>
-        <img src={pop} alt="pop-up" className="pop-up"></img>
-        <p className='last-name'>Hi there</p>
+        <img src={pop} alt="illustration" className="footer-img3"></img>
+     
          </div>
          
     </div>

@@ -2,30 +2,29 @@
 
 @import "../global.scss";
 
-.body-container {
+.header {
   display: flex;
-  justify-content: space-between;
-  height: 100vh;
+  flex-direction: row; 
 
   .left-section {
-    width: 40%;
-    
-     flex-direction: column;
+    width: 40%; 
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: $header-left-footer;
+    padding: 20px;
 
     .left-section-top {
-     
+      display: flex;
       justify-content: center;
-       align-items: flex-start;
-     
+      align-items: flex-start;
 
       p {
-       
         font-family: $logo-font;
         font-weight: bold;
         font-size: 3rem;
+       
 
         &:hover {
           color: #5a2362;
@@ -33,21 +32,17 @@
         }
       }
     }
-  }
-    
-     
 
-      .lamp  {
+ 
+
+   .lamp  {
         width: 100px;
         margin-left: 400px;
-        margin-top: -70px;
-       
-
+        margin-top: -80px;
       }
     
-     .shelf  {
-       
-        margin-left: 50px;
+     .shelf  {       
+        margin-left: -150px;
          margin-top: 10px;
           
           height: auto;
@@ -56,70 +51,135 @@
       }
 
     .computer-screen img {
-    // margin-top: 10px;
+  
     width: 100%;
     height: auto;
     max-width: 400px;
-   margin-left: 230px;
+   margin-left: 150px;
    margin-top: -200px;
 }
+  }
 
-  
 
-  .right-section {
-    width: 60%;
+.right-section {
+  width: 60%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #0c0c0c;
+  background-color: $header-right;
+  padding: 20px;
+
+  .nav-links {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 2rem;
     justify-content: center;
-    color: #0c0c0c;
-    background-color: $header-right;
+     margin-top: -140px;
+     margin-left: 100px;
+    a {
+      font-family: 'Montserrat', sans-serif;
+      color: #333;
+      font-size: 1.1rem;
+      transition: color 0.3s;
 
-    .nav-links {
-      display: flex;
-      flex-direction: row;
-      gap: 2rem;
-      
-       margin-left: 400PX;
-      justify-content: flex-start;
-
-      a {
-        font-family: 'Montserrat', sans-serif;
-        color: #333;
-        font-size: 1.1rem;
-        transition: color 0.3s;
-        margin-top: -170px;
-       
-
-        &:hover {
-          color: #5a2362;
-          text-decoration: underline;
-          text-decoration-style: wavy;
-        }
+      &:hover {
+        color: #5a2362;
+        text-decoration: underline;
+        text-decoration-style: wavy;
       }
     }
+  }
 
-    .intro {
-       font-size: 1.5rem;
+  .header-description {
+    .header-intro {
+      font-size: 1.5rem;
       color: #110e0e;
-      margin-bottom: 1rem;
-    }
-      .name {
-        font-family: 'Pacifico', cursive;
-        color: #43b3ae;
-        font-size: 2rem;
-      }
+      margin-top: 100px;
     }
 
-    .main-text {
+    .name {
+      font-family: 'Pacifico', cursive;
+      color: #43b3ae;
+      font-size: 2rem;
+    }
+
+    .header-maintext {
       font-size: 2.5rem;
       font-weight: bold;
       line-height: 1.2;
       color: #333;
-      margin-left: 100px;
+      text-align: center;
 
       .highlight {
         color: #43b3ae;
       }
     }
   }
+ }
+
+
+  
+  @media (max-width: 1024px) {
+    flex-direction: column; 
+
+    .left-section, .right-section {
+      width: 100%; 
+      background-color: pink; 
+    }
+
+    .left-section .left-section-top p {
+      font-size: 2rem;
+    }
+
+    .name {
+      display: block;
+    }
+
+    .lamp,
+    .shelf,
+    .computer-screen {
+      display: none !important; 
+    }
+
+    .header-maintext {
+      font-size: 2rem;
+    }
+
+    .nav-links a {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .left-section, .right-section {
+      align-items: center;
+      text-align: center;
+    }
+
+    .left-section .left-section-top p,
+    .header-maintext {
+      font-size: 1.5rem;
+    }
+
+    .nav-links {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .left-section .left-section-top p {
+      font-size: 1.25rem;
+    }
+
+    .header-maintext {
+      font-size: 1.5rem;
+    }
+
+    .nav-links a {
+      font-size: 0.9rem;
+    }
+  }
+}
 

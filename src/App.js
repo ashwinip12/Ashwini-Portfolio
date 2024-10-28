@@ -1,22 +1,30 @@
+
 import './App.css';
-import { Certificate } from './CertificateComponent/Certificate';
-import Footer from './FooterComponent/Footer';
-
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './HeaderComponent/Header';
-
-import { Project } from './ProjectComponent/Project';
-
+import Footer from './FooterComponent/Footer';
 import { Skill } from './SkillComponent/Skill';
+import { Project } from './ProjectComponent/Project';
+import { Certificate } from './CertificateComponent/Certificate';
 
 function App() {
   return (
-    <div className="App">
-     <Header/>
-     <Skill/>
-     <Project/>
-     <Certificate/>
-     <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+
+        <div id="skills">
+          <Skill />
+        </div>
+        <div id="projects">
+          <Project />
+        </div>
+        <div id="certificates">
+          <Certificate />
+        </div>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 

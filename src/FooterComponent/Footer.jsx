@@ -1,6 +1,6 @@
 import React from 'react';
 import './_Footer.scss';
-import pop from './images/pop.svg';
+import pop from './images/pop-up.svg';
 import email from './images/email.svg';
 import linkedin from './images/linkedin.svg';
 const Footer=()=>{

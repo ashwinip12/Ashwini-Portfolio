@@ -1,6 +1,6 @@
 import React from 'react';
 import './_Footer.scss';
-import pop from './images/pop-up.svg';
+import pp from './images/pp.gif';
 import email from './images/email.svg';
 import linkedin from './images/linkedin.svg';
 const Footer=()=>{
@@ -18,7 +18,7 @@ const Footer=()=>{
         <img src={linkedin} alt="illustration" className="footer-img2"></img>
         </div>
         </div>
-        <img src={pop} alt="illustration" className="footer-img3"></img>
+        <img src={pp} alt="illustration" className="footer-img3"></img>
      
          </div>
          

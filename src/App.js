@@ -7,12 +7,14 @@ import { Skill } from './SkillComponent/Skill';
 import { Project } from './ProjectComponent/Project';
 import { Certificate } from './CertificateComponent/Certificate';
 
+
+
 function App() {
   return (
     <Router>
       <div className="App">
         <Header />
-
+       
         <div id="skills">
           <Skill />
         </div>
@@ -23,6 +25,7 @@ function App() {
           <Certificate />
         </div>
         <Footer />
+    
       </div>
     </Router>
   );

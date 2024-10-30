@@ -3,7 +3,7 @@ import './App.css';
 import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './HeaderComponent/Header';
 import Footer from './FooterComponent/Footer';
-import { Skill } from './SkillComponent/Skill';
+import  Skill  from './SkillComponent/Skill';
 import { Project } from './ProjectComponent/Project';
 import { Certificate } from './CertificateComponent/Certificate';
 

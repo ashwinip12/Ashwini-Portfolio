@@ -1,251 +1,79 @@
 
- @import "../global.scss";
 
-// .Certificate-container {
-//     background-color: $skills; 
-//     height: 400px; 
-   
-//     justify-content: center; 
-//     align-items: center; 
-//    padding: 20px;
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-    
-   
-// }
-
-// .Certificate-title {
-//    font-size: 30px;
-    
-//     font-family: $main-font;
-//     margin-right: 1150px;
-// }
-
-// .Certificate-image {
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//      margin-top: 50px;
-//      flex-direction: row;
-//       gap:50px;
-//     img {
-//         max-width: 100%; 
-//         height: auto; 
-//     }
-// }
-
-
-// @media screen and (max-width:1024px) {
-// .Certificate-container{
-
-//     height: 500px;
-//     padding: 20px;
-//     }
-//    .Certificate-title{
-//     font-size: 1rem;
-//     margin-right: 0px;
-//    }
-   
-//    .Certificate-image img{
-//     max-width: 100%;
-//     height: auto;
-//     }
-    
-// }
-// @media screen and (max-width:768px) {
-// .Certificate-container{
-
-//     height: 400px;
-    
-//     }
-//    .Certificate-title{
-//     font-size: 0.875rem;
-//     margin-right: 0px;
-//    }
-   
-//    .Certificate-image img{
-//     max-width: 50%;
-//     height: 50%;
-   
-//     }
-    
-// }
-// @media screen and (max-width:480px) {
-// .Certificate-container{
-
-//     height: 200px;
-//     padding: 10px;
-//     }
-//    .Certificate-title{
-//     font-size: 0.75rem;
-//     margin-right: 0px;
-//    }
-   
-//    .Certificate-image img{
-//     width: 90px;
-//     height: 90px;
-//     }
-    
-// }
-
-
-/* link.css */
-
-// .main {
-//   max-width: 300px;
-//   margin: 0 auto;
-//   padding: 20px;
-// }
-
-// h1 {
-//   font-size: 24px;
-//   font-weight: 400;
-//   text-align: center;
-// }
-
-// img {
-//   height: auto;
-//   max-width: 100%;
-//   vertical-align: middle;
-// }
-
-// .cards {
-//   display: flex;
-//   flex-wrap: wrap;
-//   list-style: none;
-//   margin: 0;
-//   padding: 0;
-//   flex-direction: row;
-// }
-
-// .cards_item {
-//   display: flex;
-//   padding: 1rem;
-//   width: 100%; /* Full width on small screens */
-// }
-
-// @media (min-width: 40rem) {
-//   .cards_item {
-//     width: 50%; /* Two cards per row */
-//   }
-// }
-
-// @media (min-width: 56rem) {
-//   .cards_item {
-//     width: 33.3333%; /* Three cards per row */
-//   }
-// }
-
-// .card {
-//   background-color: white;
-//   border-radius: 0.25rem;
-//   box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-//   display: flex;
-//   flex-direction: column;
-//   overflow: hidden;
-//   height: 230px;
-// }
-
-// .card_content {
-//   padding: 1rem;
-
-//   background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
-// }
-
-// .card_title {
-//   color: #ffffff;
-//   font-size: 1.1rem;
-//   font-weight: 700;
-//   letter-spacing: 1px;
-//   text-transform: capitalize;
-//   margin-top: -10px;
-// }
-
-// .card_text {
-//   color: #ffffff;
-//   font-size: 0.875rem;
-//   font-weight: 400;
-// }
-
-
+@import '../global.scss';
 
 .cert-main {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 20px;
- 
-}
-
-.cert-title {
-  font-size: 24px;
-  font-weight: 400;
   text-align: center;
+  background-color: $header-left-footer;
+  padding: 2rem;
 }
 
-.cert-card_image img {
-  height: auto;
-  max-width: 300px;
-  
-  vertical-align: middle;
-}
 
-.cert-cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  width: 900px;
-  justify-content: center;
- 
-}
-
-.cert-cards_item {
-  display: flex;
-  padding: 1rem;
-  width: 100%; /* Full width on small screens */
-}
-
-@media (min-width: 40rem) {
-  .cert-cards_item {
-    width: 50%; /* Two cards per row */
-  }
-}
-
-@media (min-width: 56rem) {
-  .cert-cards_item {
-    width: 33.3333%; /* Three cards per row */
-  }
-}
 
 .cert-card {
-  
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fcf7f7;
+  border-radius: 12px;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
   overflow: hidden;
- 
-  
-  
+  text-align: center;
+  transition: transform 0.4s cubic-bezier(0.175, 0.885, 0, 1), box-shadow 0.4s;
+}
+
+.cert-card_image {
+  width: 100%;
+  height: 185px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 
 .cert-card_content {
   padding: 1rem;
-  background: linear-gradient(to bottom left, #ef8d9c 40%, #ffc39e 100%);
 }
 
 .cert-card_title {
-  color: #ffffff;
-  font-size: 1.1rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: capitalize;
-//   margin-top: -10px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+ 
 }
 
 .cert-card_text {
-  color: #ffffff;
-  font-size: 0.875rem;
-  font-weight: 400;
+  font-size: 14px;
+  color: #919191;
+}
+
+.cert-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.cert-title
+{
+  margin-bottom: 1.5rem;
+  margin-right: 70rem;
+  font-size: 2.5rem;
+  font-family: $sub-font;}
+.scroll-button {
+  background: #333;
+  color: #fff;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cert-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px; /* Increased gap to add more space between cards */
+  margin: 0 auto;
+  max-width: 1200px;
 }

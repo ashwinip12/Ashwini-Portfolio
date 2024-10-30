@@ -24,48 +24,98 @@
 
 
 
-import React from "react";
+// import React from "react";
+// import "./_Certificate.scss";
+
+// export const Certificate = () => {
+//   return (
+//     <div className="cert-main">
+//       <h1 className="cert-title">Certficates..</h1>
+//       <ul className="cert-cards">
+//         <li className="cert-cards_item">
+//           <div className="cert-card">
+//             <div className="cert-card_image">
+//               <img src="https://picsum.photos/500/300/?image=10" alt="Card 1" />
+//             </div>
+//             <div className="cert-card_content">
+//               <h2 className="cert-card_title">Card 1</h2>
+//               <p className="cert-card_text">Description for Card 1.</p>
+//             </div>
+//           </div>
+//         </li>
+//         <li className="cert-cards_item">
+//           <div className="cert-card">
+//             <div className="cert-card_image">
+//               <img src="https://picsum.photos/500/300/?image=5" alt="Card 2" />
+//             </div>
+//             <div className="cert-card_content">
+//               <h2 className="cert-card_title">Card 2</h2>
+//               <p className="cert-card_text">Description for Card 2.</p>
+//             </div>
+//           </div>
+//         </li>
+//         <li className="cert-cards_item">
+//           <div className="cert-card">
+//             <div className="cert-card_image">
+//               <img src="https://picsum.photos/500/300/?image=11" alt="Card 3" />
+//             </div>
+//             <div className="cert-card_content">
+//               <h2 className="cert-card_title">Card 3</h2>
+//               <p className="cert-card_text">Description for Card 3.</p>
+//             </div>
+//           </div>
+//         </li>
+//       </ul>
+//     </div>
+//   );
+// };
+
+
+
+
+
+import React, { useState } from "react";
 import "./_Certificate.scss";
 
 export const Certificate = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const certificates = [
+    { title: "Card 1", imgSrc: "https://picsum.photos/500/300/?image=10", text: "Description for Card 1." },
+    { title: "Card 2", imgSrc: "https://picsum.photos/500/300/?image=5", text: "Description for Card 2." },
+    { title: "Card 3", imgSrc: "https://picsum.photos/500/300/?image=11", text: "Description for Card 3." },
+    { title: "Card 4", imgSrc: "https://picsum.photos/500/300/?image=12", text: "Description for Card 4." },
+    { title: "Card 5", imgSrc: "https://picsum.photos/500/300/?image=13", text: "Description for Card 5." },
+  
+  ];
+
+  const visibleCards = certificates.slice(currentIndex, currentIndex + 3);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 3 : Math.max(certificates.length - 3, 0)));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 3 < certificates.length ? prevIndex + 3 : 0));
+  };
+
   return (
     <div className="cert-main">
-      <h1 className="cert-title">Certficates..</h1>
-      <ul className="cert-cards">
-        <li className="cert-cards_item">
-          <div className="cert-card">
-            <div className="cert-card_image">
-              <img src="https://picsum.photos/500/300/?image=10" alt="Card 1" />
-            </div>
+      <h1 className="cert-title">Certificates</h1>
+      <div className="cert-cards-container">
+        {visibleCards.map((certificate, index) => (
+          <div className="cert-card" key={index}>
+            <img src={certificate.imgSrc} alt={certificate.title} className="cert-card_image" />
             <div className="cert-card_content">
-              <h2 className="cert-card_title">Card 1</h2>
-              <p className="cert-card_text">Description for Card 1.</p>
+              <h2 className="cert-card_title">{certificate.title}</h2>
+              <p className="cert-card_text">{certificate.text}</p>
             </div>
           </div>
-        </li>
-        <li className="cert-cards_item">
-          <div className="cert-card">
-            <div className="cert-card_image">
-              <img src="https://picsum.photos/500/300/?image=5" alt="Card 2" />
-            </div>
-            <div className="cert-card_content">
-              <h2 className="cert-card_title">Card 2</h2>
-              <p className="cert-card_text">Description for Card 2.</p>
-            </div>
-          </div>
-        </li>
-        <li className="cert-cards_item">
-          <div className="cert-card">
-            <div className="cert-card_image">
-              <img src="https://picsum.photos/500/300/?image=11" alt="Card 3" />
-            </div>
-            <div className="cert-card_content">
-              <h2 className="cert-card_title">Card 3</h2>
-              <p className="cert-card_text">Description for Card 3.</p>
-            </div>
-          </div>
-        </li>
-      </ul>
+        ))}
+      </div>
+      <div className="cert-buttons">
+        <button className="scroll-button prev" onClick={handlePrev}>{"<"}</button>
+        <button className="scroll-button next" onClick={handleNext}>{">"}</button>
+      </div>
     </div>
   );
 };

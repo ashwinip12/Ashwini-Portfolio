@@ -1,29 +1,33 @@
 import React from 'react';
 import './_Footer.scss';
 import pp from './images/pp.gif';
-import email from './images/email.svg';
-import linkedin from './images/linkedin.svg';
-const Footer=()=>{
+import email from './images/envelope-icon.svg';
+import linkedin from './images/linkedin-app-icon.svg';
+import instagram from './images/ig-instagram-icon.svg';
 
+const Footer = () => {
   return (
     <div className='footer'>
-     <div className='footer-container'>
+      <div className='footer-container'>
         <p className="footer-intro">I’m always up for a chat.</p>
         <div className="footer-maintext">
-<p><span className='footer-highlight'>Pop me an email</span> at ashwinibms2020@gmail.com </p>
-<h5>or give shoutout on social media.</h5>
-        
-        <div className='footer-image'>
-        <img src={email} alt="illustration" className="footer-img1"></img>
-        <img src={linkedin} alt="illustration" className="footer-img2"></img>
+          <p>
+            <span className='footer-highlight'>Pop me an email</span> at ashwinibms2020@gmail.com
+          </p>
+          <h5>or give a shoutout on social media.</h5>
+          <div className='footer-image'>
+            <a href='https://www.linkedin.com/in/ashwini-p-15a8b2224/' target="_blank" rel="noopener noreferrer">
+              <img src={linkedin} alt="LinkedIn" className="footer-img1" />
+            </a>
+            <a href='https://www.instagram.com/ashwiniedigar/' target="_blank" rel="noopener noreferrer">
+              <img src={instagram} alt="Instagram" className="footer-img2" />
+            </a>
+          </div>
         </div>
-        </div>
-        <img src={pp} alt="illustration" className="footer-img3"></img>
-     
-         </div>
-         
+        <img src={pp} alt="Profile" className="footer-img3" />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Footer;

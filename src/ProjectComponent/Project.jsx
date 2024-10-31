@@ -1,74 +1,74 @@
 
 
-// // import React from 'react';
-// // import './_Project.scss';
+// // // import React from 'react';
+// // // import './_Project.scss';
 
-// // export const Project = () => {
-// //   return (
-// //     <section className="card-section">
-// //     <h2 className="card__title1">Projects</h2>
-// //     <div className='cards'>
+// // // export const Project = () => {
+// // //   return (
+// // //     <section className="card-section">
+// // //     <h2 className="card__title1">Projects</h2>
+// // //     <div className='cards'>
       
     
-// //       <article className="card card--1">
+// // //       <article className="card card--1">
       
-// //         <div className="card__img card__img--1"></div>
+// // //         <div className="card__img card__img--1"></div>
         
-// //         <div className="card__info">
-// //           <span className="card__category">TravelTix</span>
-// //           <h3 className="card__title">Bus Ticket  Booking</h3>
+// // //         <div className="card__info">
+// // //           <span className="card__category">TravelTix</span>
+// // //           <h3 className="card__title">Bus Ticket  Booking</h3>
 
          
-// //         </div>
-// //       </article>
+// // //         </div>
+// // //       </article>
 
-// //       <article className="card card--2">
+// // //       <article className="card card--2">
 
-// //         <div className="card__img card__img--2"></div>
+// // //         <div className="card__img card__img--2"></div>
 
-// //         <div className="card__info">
-// //           <span className="card__category">Travel</span>
-// //           <h3 className="card__title">Discover the sea</h3>
-// //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
-// //         </div>
-// //       </article>
-// //        <article className="card card--3">
+// // //         <div className="card__info">
+// // //           <span className="card__category">Travel</span>
+// // //           <h3 className="card__title">Discover the sea</h3>
+// // //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+// // //         </div>
+// // //       </article>
+// // //        <article className="card card--3">
 
-// //         <div className="card__img card__img--2"></div>
+// // //         <div className="card__img card__img--2"></div>
       
-// //         <div className="card__info">
-// //           <span className="card__category">Travel</span>
-// //           <h3 className="card__title">Discover the sea</h3>
-// //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
-// //         </div>
-// //       </article>
+// // //         <div className="card__info">
+// // //           <span className="card__category">Travel</span>
+// // //           <h3 className="card__title">Discover the sea</h3>
+// // //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+// // //         </div>
+// // //       </article>
       
-// //       <article className="card card--4">
+// // //       <article className="card card--4">
 
-// //         <div className="card__img card__img--4"></div>
+// // //         <div className="card__img card__img--4"></div>
 
-// //         <div className="card__info">
-// //           <span className="card__category">Travel</span>
-// //           <h3 className="card__title">Discover the sea</h3>
-// //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
-// //         </div>
-// //       </article>
-// //        <article className="card card--5">
+// // //         <div className="card__info">
+// // //           <span className="card__category">Travel</span>
+// // //           <h3 className="card__title">Discover the sea</h3>
+// // //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+// // //         </div>
+// // //       </article>
+// // //        <article className="card card--5">
 
-// //         <div className="card__img card__img--5"></div>
+// // //         <div className="card__img card__img--5"></div>
 
-// //         <div className="card__info">
-// //           <span className="card__category">Travel</span>
-// //           <h3 className="card__title">Discover the sea</h3>
-// //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
-// //         </div>
-// //       </article>
+// // //         <div className="card__info">
+// // //           <span className="card__category">Travel</span>
+// // //           <h3 className="card__title">Discover the sea</h3>
+// // //           <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+// // //         </div>
+// // //       </article>
       
-// //       </div>
+// // //       </div>
       
-// //     </section>
-// //   );
-// // };
+// // //     </section>
+// // //   );
+// // // };
 
 
 import React from 'react';
@@ -86,7 +86,7 @@ export const Project = () => {
           </a>
           <div className="card__info">
             <span className="card__category">TravelTix</span>
-            <h3 className="card__title">Bus Ticket Booking</h3>
+        
           </div>
         </article>
 
@@ -95,31 +95,29 @@ export const Project = () => {
             <div className="card__img card__img--2"></div>
           </a>
           <div className="card__info">
-            <span className="card__category">Travel</span>
-            <h3 className="card__title">Discover the Sea</h3>
-            <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+            <span className="card__category">Trade Track</span>
+         
           </div>
         </article>
 
         <article className="card card--3">
-          <a href="https://example.com/discover-the-sea" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ashwinip12/Todo-app" target="_blank" rel="noopener noreferrer">
             <div className="card__img card__img--2"></div>
           </a>
           <div className="card__info">
-            <span className="card__category">Travel</span>
-            <h3 className="card__title">Discover the Sea</h3>
-            <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+            <span className="card__category">Todo list</span>
+          
           </div>
         </article>
 
         <article className="card card--4">
-          <a href="https://example.com/discover-the-sea" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ashwinip12/Shortest-Path" target="_blank" rel="noopener noreferrer">
             <div className="card__img card__img--4"></div>
           </a>
           <div className="card__info">
-            <span className="card__category">Travel</span>
-            <h3 className="card__title">Discover the Sea</h3>
-            <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+            <span className="card__category">Shortest Path</span>
+         
+
           </div>
         </article>
 
@@ -129,11 +127,21 @@ export const Project = () => {
           </a>
           <div className="card__info">
             <span className="card__category">Login and SignUp page</span>
-            <h3 className="card__title">HTML and CSS</h3>
-            <span className="card__by">by <a href="#" className="card__author">John Doe</a></span>
+           
+
           </div>
         </article>
-        
+
+         <article className="card card--6">
+          <a href="https://github.com/ashwinip12/Ecommerce-website" target="_blank" rel="noopener noreferrer">
+            <div className="card__img card__img--6"></div>
+          </a>
+          <div className="card__info">
+            <span className="card__category">Ecommerce website</span>
+          
+           
+          </div>
+        </article>
       </div>
     </section>
   );
@@ -167,7 +175,7 @@ export const Project = () => {
 // export const Project = () => {
 //   return (
 //     <section className="projects-section">
-//       <h2>Discover my projects, where creativity meets innovation</h2>
+//       <h2>My latest works</h2>
 //       <div className="projects-container">
 //         {projects.map((project, index) => (
 //           <div className="project-card" key={index}>
@@ -186,4 +194,6 @@ export const Project = () => {
 //     </section>
 //   );
 // };
+
+
 

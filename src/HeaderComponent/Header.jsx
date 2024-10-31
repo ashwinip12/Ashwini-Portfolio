@@ -211,20 +211,21 @@ const Header = () => {
             👋Hi, I'm <span className="name">Ashwini</span>
           </p>
           <h1 className="header-maintext">
-            Diving into coding with a focus on{' '}
+         
+            Venturing into the world of coding, where every interactive project enhances my { } 
             <span
               className="highlight cursor-pointer relative"
               onMouseEnter={() => setCreatingVisible(true)}
               onMouseLeave={() => setCreatingVisible(false)}
             >
-              creating ,
+              skills, 
             </span>{' '}
             <span
               className="highlight cursor-pointer relative"
               onMouseEnter={() => setEngagingVisible(true)}
               onMouseLeave={() => setEngagingVisible(false)}
             >
-              engaging
+            creativity
             </span>{' '}
             and{' '}
             <span
@@ -232,9 +233,9 @@ const Header = () => {
               onMouseEnter={() => setInteractiveVisible(true)}
               onMouseLeave={() => setInteractiveVisible(false)}
             >
-              interactive
+             engagement!
             </span>{' '}
-            things. Every project is a chance to learn something new, and I’m here to share it all!
+     
           </h1>
           {isCreatingVisible && (
             <div className="creating-content">

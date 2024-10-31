@@ -1,65 +1,38 @@
-// @import "../global.scss";
-
-// .Skill-container {
-//     background-color: $skills; 
-//     height: 400px; 
-//     display: flex; 
-//     flex-direction: column; 
-//     justify-content: center; 
-//     align-items: center; 
-//     padding: 20px; 
-//     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
-// }
-
-// .Skill-title {
-//     margin-bottom: 20px;
-// }
-
-// .Skill-image {
-//     img {
-//         max-width: 100%; 
-//         height: auto; 
-//     }
-// }
 
 @import '../global.scss';
 
 $primary-color: #FF6B6B;
 $primary-color-hover: scale-color($primary-color, $lightness: 32%);
-
-
+$wood-color: #deb887; 
 
 .container-fluid {
-background-color: $skills;
-.example-basic{
- .skills-heading {
+    background-color: $skills; 
+    padding: 20px;
+}
+
+.example-basic {
+    .skills-heading {
         margin: 0 auto;
-        font-size: 26px;
+        font-size: 36px;
         max-width: 400px;
         padding: 20px;
-        margin-right: 1200px;
         font-family: $sub-font;
+        text-align: center; 
     }
 }
-     
-}
-
-
 
 .timeline {
-    line-height: 1.4em;
+    line-height: 2.0em;
     list-style: none;
-
+    font-size: 15px;
     padding: 0;
     width: 100%;
-    
+    font-family: $sub-font;
 
     h1, h2, h3, h4, h5, h6 {
         line-height: inherit;
-       
     }
 }
-
 
 .timeline-item {
     padding-left: 40px;
@@ -70,25 +43,23 @@ background-color: $skills;
     }
 }
 
-
 .timeline-info {
-    font-size: 12px;
+    font-size: 20px;
     font-weight: 700;
-    letter-spacing: 3px;
+    font-family: $normal-font;
+    letter-spacing: 0;
     margin: 0 0 .5em 0;
-    text-transform: uppercase;
     white-space: nowrap;
-   margin-right: 500px;
-  
+    margin-right: 500px; 
 }
-
 
 .timeline-marker {
     position: absolute;
-    top: 0; bottom: 0; left:300px;
+    top: 0; 
+    bottom: 0; 
+    left: 300px; 
     width: 15px;
-     
-  
+
     &:before {
         background: $primary-color;
         border: 3px solid transparent;
@@ -97,20 +68,22 @@ background-color: $skills;
         display: block;
         height: 15px;
         position: absolute;
-        
-        top: 4px; left: 0;
+        top: 4px; 
+        left: 0;
         width: 15px;
         transition: background 0.3s ease-in-out,
-              border 0.3s ease-in-out;
+                    border 0.3s ease-in-out;
     }
 
     &:after {
         content: "";
         width: 3px;
-     background: #CCD5DB;
+        background: #CCD5DB;
         display: block;
         position: absolute;
-        top: 24px; bottom: 0; left: 6px;
+        top: 24px; 
+        bottom: 0; 
+        left: 6px;
     }
 
     .timeline-item:last-child &:after {
@@ -124,14 +97,13 @@ background-color: $skills;
 }
 
 .timeline-content {
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     margin-left: -500px;
-  
+
     p:last-child {
         margin-bottom: 0;
     }
 }
-
 
 .period {
     padding: 0;
@@ -152,7 +124,6 @@ background-color: $skills;
             margin-left: 800px;
             bottom: 30px;
             position: absolute;
-         
         }
 
         &:after {
@@ -164,22 +135,106 @@ background-color: $skills;
 
     .timeline-content {
         padding: 40px 0 35px;
-         margin-right: 900px;
+        margin-right: 900px; 
+        font-size: 19px;
     }
 
-    .timeline-title1{
-       
-        margin-left: 510px;
-       
+    .timeline-title1 {
+        margin-left: 510px; 
     }
 }
 
+.example-basic {
+    .titles-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        margin-left: -800px;
+
+        .skills-heading {
+            margin: 0 5px;
+            cursor: pointer;
+            padding: 10px 20px;
+            transition: color 0.3s ease;
+        }
+
+        .and-text {
+            font-family: $sub-font;
+            margin: 0 10px;
+            font-weight: bold;
+            font-size: 30px;
+        }
+    }
+}
+
+.skill-images {
+    text-align: center; 
+
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        gap: 20px; 
+
+        .skill-image {
+            width: 5rem; 
+            height: 5rem; 
+            border-radius: 8px; 
+            object-fit: cover; 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .timeline-item {
+        padding-left: 20px; 
+        padding-bottom: 20px; 
+    }
+
+    .timeline-info {
+        margin-right: 10px; 
+        white-space: normal; 
+        font-size: 18px; 
+    }
+
+    .timeline-marker {
+        left: 10px; 
+    }
+
+    .timeline-content {
+        margin-left: 50px; 
+        padding: 0 10px; 
+    }
+
+    .period .timeline-title1 {
+        margin-left: 0; 
+    }
+}
+
+@media (max-width: 992px) {
+    .timeline-info,
+    .timeline-content {
+        width: 100%; 
+        text-align: left; 
+    }
+
+    .timeline-marker {
+        position: relative; 
+        left: 0; 
+        margin: 0; 
+    }
+
+    .timeline-content {
+        padding-left: 0; 
+        margin-left: 0; 
+    }
+}
 
 .timeline-split {
     @media (min-width: 768px) {
         .timeline {
             display: table;
-           
         }
 
         .timeline-item {
@@ -209,7 +264,7 @@ background-color: $skills;
 
         .period .timeline-title {
             position: relative;
-            left: -45px;
+            left: 45px;
         }
     }
 }
@@ -236,7 +291,7 @@ background-color: $skills;
         .timeline-marker {
             position: absolute;
             left: 50%;
-            margin-left: -7.5px;
+            margin-left: 7.5px;
         }
 
         .timeline-info,
@@ -254,7 +309,7 @@ background-color: $skills;
             float: right;
             text-align: left;
             padding-left: 30px;
-        }    
+        }
 
         > .timeline-item:nth-child(even) .timeline-info {
             float: right;

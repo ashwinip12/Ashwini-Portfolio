@@ -76,15 +76,15 @@
 
 import React, { useState } from "react";
 import "./_Certificate.scss";
-
+import Udyamsheel from './Images/Udyamsheel.svg'
 export const Certificate = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const certificates = [
-    { title: "Card 1", imgSrc: "https://picsum.photos/500/300/?image=10", text: "Description for Card 1." },
+    { title: "Card 1", imgSrc: "https://ibb.co/PTJKM9K", text: "Description for Card 1." },
     { title: "Card 2", imgSrc: "https://picsum.photos/500/300/?image=5", text: "Description for Card 2." },
     { title: "Card 3", imgSrc: "https://picsum.photos/500/300/?image=11", text: "Description for Card 3." },
     { title: "Card 4", imgSrc: "https://picsum.photos/500/300/?image=12", text: "Description for Card 4." },
-    { title: "Card 5", imgSrc: "https://picsum.photos/500/300/?image=13", text: "Description for Card 5." },
+    { title: "Card 5", imgSrc: {Udyamsheel}, text: "Description for Card 5." },
   
   ];
 

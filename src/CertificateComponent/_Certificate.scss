@@ -4,11 +4,9 @@
 
 .cert-main {
   text-align: center;
-  background-color: $header-left-footer;
+  background-color: $skills;
   padding: 2rem;
 }
-
-
 
 .cert-card {
   width: 100%;
@@ -19,6 +17,8 @@
   overflow: hidden;
   text-align: center;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0, 1), box-shadow 0.4s;
+
+ 
 }
 
 .cert-card_image {
@@ -36,7 +36,6 @@
   font-size: 18px;
   font-weight: bold;
   color: #333;
- 
 }
 
 .cert-card_text {
@@ -50,12 +49,14 @@
   gap: 1rem;
   margin-top: 1rem;
 }
-.cert-title
-{
+
+.cert-title {
   margin-bottom: 1.5rem;
-  margin-right: 70rem;
   font-size: 2.5rem;
-  font-family: $sub-font;}
+  font-family: $sub-font;
+  margin-right: 900px;
+}
+
 .scroll-button {
   background: #333;
   color: #fff;
@@ -70,10 +71,58 @@
   align-items: center;
   justify-content: center;
 }
+
 .cert-cards-container {
   display: flex;
   justify-content: center;
-  gap: 40px; /* Increased gap to add more space between cards */
+  gap: 40px; 
   margin: 0 auto;
   max-width: 1200px;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .cert-cards-container {
+    flex-direction: row; 
+    gap: 20px; 
+  }
+
+  .cert-title {
+    margin: 0 auto; /* Center title on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .cert-title {
+    font-size: 2rem; 
+  }
+
+  .cert-card {
+    max-width: 45%; /* Adjust card width for medium screens */
+  }
+
+  .cert-card_title {
+    font-size: 16px; 
+  }
+
+  .cert-card_text {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .scroll-button {
+    font-size: 1.5rem; 
+    width: 40px;
+    height: 40px; 
+  }
+
+  .cert-title {
+    font-size: 1.5rem; 
+  }
+
+  .cert-card {
+    max-width: 90%; /* Full width for small screens */
+  }
 }

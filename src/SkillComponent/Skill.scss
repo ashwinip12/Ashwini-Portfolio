@@ -221,7 +221,7 @@ $wood-color: #deb887;
 
     .timeline-marker {
         position: relative; 
-        left: 0; 
+        left: -19px; 
         margin: 0; 
     }
 
@@ -248,10 +248,12 @@ $wood-color: #deb887;
         .period .timeline-info {
             display: table-cell;
             vertical-align: top;
+            
         }
 
         .timeline-marker {
             position: relative;
+            
         }
 
         .timeline-content {

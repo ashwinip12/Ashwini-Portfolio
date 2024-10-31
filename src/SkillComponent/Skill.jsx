@@ -70,7 +70,7 @@ const Skill = () => {
                                     <div className="timeline-marker"></div>
                                     <div className="timeline-info"> 
                                         <h3 className="timeline-title">Bachelor of Engineering</h3>
-                                        <p className="timeline-date">2023-2024</p>
+                                        <p className="timeline-date">2020-2024</p>
                                     </div>
                                     <div className="timeline-content">
                                         <p>B.E in Information Science and Engineering-8.76(cgpa)</p>

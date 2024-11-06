@@ -2,7 +2,7 @@
 @import "../global.scss";
 
 .card-section {
-  height: 103vh;
+  height: 110vh;
   background-color: $header-right;
   
 .card__title1{
@@ -11,7 +11,8 @@
     padding: 2rem;
     font-size: 34px;
     margin-right: 1000px;
-    font-family: $sub-font;
+    font-family: sans-serif;
+    font-weight: bold;
     }
   
 }
@@ -66,7 +67,8 @@
 }
 .card--3 .card__img,
 .card--3 .card__img--hover {
-  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSESEGzFuxsaZzUPvqcnM6pKYNeNeGhpJ1KiA&s');
+  background-image: url('https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQHXLLhGfr48PzIDX8RCBh9tqhT64M-qpUmM7L9ByVn4LUUECgs9kA3OisqJoe3XDNMSAhAq_U9GfyZxfQiOZ-ODyh2zOmfNQYQXts8qjY');
+    background-size: cover;
 }
 .card--4 .card__img,
 .card--4 .card__img--hover {

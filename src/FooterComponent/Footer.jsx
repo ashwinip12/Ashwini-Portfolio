@@ -16,7 +16,7 @@ const Footer = () => {
           </p>
           <h5>or give a shoutout on social media.</h5>
           <div className='footer-image'>
-            <a href='https://www.linkedin.com/in/ashwini-p-15a8b2224/' target="_blank" rel="noopener noreferrer">
+            <a href='https://www.linkedin.com/in/ashwini-p-15a8b2224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app' target="_blank" rel="noopener noreferrer">
               <img src={linkedin} alt="LinkedIn" className="footer-img1" />
             </a>
             <a href='https://www.instagram.com/ashwiniedigar/' target="_blank" rel="noopener noreferrer">

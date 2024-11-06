@@ -12,7 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: $header-left-footer;
+    background-color: white;
     padding: 20px;
 
     .left-section-top {
@@ -24,6 +24,7 @@
         font-family: $logo-font;
         font-weight: bold;
         font-size: 4rem;
+        margin-left: 50px;
        
 
         &:hover {
@@ -41,7 +42,7 @@
       }
     
      .shelf  {       
-        margin-left: -150px;
+        margin-left: -220px;
          margin-top: 30px;
           
           height: auto;
@@ -54,8 +55,9 @@
     width: 100%;
     height: auto;
     max-width: 400px;
-   margin-left: 143px;
-   margin-top: -200px;
+   margin-left: 203px;
+   margin-top: -150px;
+   margin-bottom: 100px;
 }
   }
 
@@ -66,15 +68,16 @@
   flex-direction: column;
   justify-content: center;
   color: #0c0c0c;
-  background-color: $header-right;
+  background-color:rgb(98, 232, 212);
   padding: 20px;
 
   .nav-links {
     display: flex;
     flex-direction: row;
     gap: 1.2rem;
+    font-weight: bold;
     justify-content: center;
-     margin-top: -40px;
+     margin-top: -160px;
      margin-left: 80px;
     a {
       font-family: 'Montserrat', sans-serif;
@@ -99,7 +102,7 @@
 
     .name {
       font-family: 'Pacifico', cursive;
-      color: #43b3ae;
+      color: #0d1313;
       font-size: 2rem;
     }
 
@@ -110,16 +113,16 @@
       color: #333;
       text-align: center;
 
-      .highlight {
-        color: #43b3ae;
-      }
+      // .highlight {
+      //   color: #43b3ae;
+      // }
     }
   
  
       .skill-content {
         position: absolute;
-         top: -90px;
-         left: 1300px;
+         top: -40px;
+         left: 1000px;
          transform: translateX(-50%);
          border-radius: 10px;
          text-align: center;
@@ -127,8 +130,8 @@
 
         .skill-image {
           width: 270px;
-          max-width: 300px;
-          height:200px;
+          max-width: 200px;
+          height:150px;
           border-radius: 8px;
           margin-top: 100px;
           
@@ -137,8 +140,8 @@
 
 .engage-content {
        position: absolute;
-         top: -40px;
-         left: 800px;
+         top: -10px;
+         left:1200px;
          transform: translateX(-50%);
          border-radius: 10px;
          text-align: center;
@@ -157,6 +160,7 @@
        position: absolute;
          top: 180px;
          left: 1300px;
+        
          transform: translateX(-50%);
          border-radius: 10px;
          text-align: center;
@@ -164,7 +168,7 @@
        
         .creativity-image  {
           width: 100%;
-          max-width: 400px;
+          max-width: 300px;
             height:auto;
           border-radius: 8px;
           margin-top: -120px;
@@ -192,13 +196,12 @@
  }
 
 
-  
   @media (max-width: 1024px) {
     flex-direction: column; 
 
     .left-section, .right-section {
       width: 100%; 
-      background-color: pink; 
+      background-color: rgb(115, 215, 200); 
     }
 
     .left-section .left-section-top p {

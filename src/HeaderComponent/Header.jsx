@@ -5,10 +5,11 @@ import './_Header.scss';
 import shelf from './image/shelf.svg';
 import lamp from './image/lamp.svg';
 import computer from './image/computer.svg';
-import creativity1 from './image/creativity1.svg';
+import animated from './image/animated.gif';
+
 import skill from './image/skill.svg';
 import engage from './image/engage.svg';
-
+import creativity from './image/creativity.svg';
 const Header = () => {
   const [isCreatingVisible, setCreatingVisible] = useState(false);
   const [isEngagingVisible, setEngagingVisible] = useState(false);
@@ -20,15 +21,15 @@ const Header = () => {
         <div className="left-section-top">
           <p>Ashwini</p>
         </div>
-        <img src={lamp} alt="lamp" className="lamp" />
+     
         <img src={shelf} alt="shelf" className="shelf" />
         <div className="computer-screen">
-          <img src={computer} alt="Computer" />
+          <img src={animated} alt="Computer" />
         </div>
       </div>
       <div className="right-section">
         <div className="nav-links">
-          <a href="#about-me">About Me</a>
+          <a href="#Home">Home</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#certificates">Certificates</a>
@@ -69,7 +70,7 @@ const Header = () => {
           )}
           {isEngagingVisible && (
             <div className="engage-content">
-              <img src={creativity1} alt="Engaging Fun" className="engage-image" />
+              <img src={creativity} alt="Engaging Fun" className="engage-image" />
             </div>
           )}
           {isInteractiveVisible && (

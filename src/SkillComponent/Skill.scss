@@ -15,7 +15,7 @@
         max-width: 400px;
         padding: 20px;
         font-weight: bold;
-        font-family: sans-serif;
+        font-family: $normal-font;
         text-align: center; 
     }
 }
@@ -188,149 +188,121 @@
     }
 }
 
+
 @media (max-width: 768px) {
     .timeline-item {
-        padding-left: 20px; 
-        padding-bottom: 20px; 
+        padding-left: 20px;
+        padding-bottom: 20px;
     }
 
     .timeline-info {
-        margin-right: 10px; 
-        white-space: normal; 
-        font-size: 18px; 
+        margin-right: -0px;
+        white-space: normal;
+        font-size: 18px;
     }
 
     .timeline-marker {
-        left: 10px; 
+        left: 10px;
     }
 
     .timeline-content {
-        margin-left: 50px; 
-        padding: 0 10px; 
+        margin-left: 0; 
+        padding: 0 10px;
     }
 
     .period .timeline-title1 {
+        margin-left: 0;
+    }
+
+    .example-basic .titles-container {
         margin-left: 0; 
+    }
+
+    .skills-heading {
+        font-size: 28px; 
+    }
+
+    .image-container {
+        gap: 15px; 
+    }
+
+    .skill-image {
+        width: 4rem; 
+        height: 4rem;
     }
 }
 
 @media (max-width: 992px) {
     .timeline-info,
     .timeline-content {
-        width: 100%; 
-        text-align: left; 
+        width: 100%;
+        text-align: left;
     }
 
     .timeline-marker {
-        position: relative; 
-        left: -19px; 
-        margin: 0; 
+        position: relative;
+        left: -19px;
+        margin: 0;
     }
 
     .timeline-content {
-        padding-left: 0; 
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .example-basic .titles-container {
+        margin-left: 0;
+    }
+
+    .skills-heading {
+        font-size: 30px;
+    }
+
+    .image-container {
+        gap: 20px; 
+    }
+
+    .skill-image {
+        width: 5rem; 
+        height: 5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-item {
+        padding-left: 15px;
+        padding-bottom: 15px;
+    }
+
+    .timeline-info {
+        margin-right: 5px;
+        font-size: 16px;
+    }
+
+    .timeline-marker {
+        left: 5px;
+    }
+
+    .timeline-content {
+        margin-left: 0;
+        padding: 0 5px;
+    }
+
+    .example-basic .titles-container {
         margin-left: 0; 
+        padding-left: 10px; 
     }
-}
 
-.timeline-split {
-    @media (min-width: 768px) {
-        .timeline {
-            display: table;
-        }
-
-        .timeline-item {
-            display: table-row;
-            padding: 0;
-        }
-
-        .timeline-info,
-        .timeline-marker,
-        .timeline-content,
-        .period .timeline-info {
-            display: table-cell;
-            vertical-align: top;
-            
-        }
-
-        .timeline-marker {
-            position: relative;
-            
-        }
-
-        .timeline-content {
-            padding-left: 30px;
-        }
-
-        .timeline-info {
-            padding-right: 30px;
-        }
-
-        .period .timeline-title {
-            position: relative;
-            left: 45px;
-        }
+    .skills-heading {
+        font-size: 26px; 
     }
-}
 
-.timeline-centered {
-    @extend .timeline-split;
+    .image-container {
+        gap: 10px; 
+    }
 
-    @media (min-width: 992px) {
-        &,
-        .timeline-item,
-        .timeline-info,
-        .timeline-marker,
-        .timeline-content {
-            display: block;
-            margin: 0;
-            padding: 0;
-        }
-
-        .timeline-item {
-            padding-bottom: 40px;
-            overflow: hidden;
-        }
-
-        .timeline-marker {
-            position: absolute;
-            left: 50%;
-            margin-left: 7.5px;
-        }
-
-        .timeline-info,
-        .timeline-content {
-            width: 50%;
-        }
-
-        > .timeline-item:nth-child(odd) .timeline-info {
-            float: left;
-            text-align: right;
-            padding-right: 30px;
-        }
-
-        > .timeline-item:nth-child(odd) .timeline-content {
-            float: right;
-            text-align: left;
-            padding-left: 30px;
-        }
-
-        > .timeline-item:nth-child(even) .timeline-info {
-            float: right;
-            text-align: left;
-            padding-left: 30px;
-        }
-
-        > .timeline-item:nth-child(even) .timeline-content {
-            float: left;
-            text-align: right;
-            padding-right: 30px;
-        }
-
-        > .timeline-item.period .timeline-title {
-            float: none;
-            margin: 0 auto;
-            text-align: center;
-        }
+    .skill-image {
+        width: 3.5rem; 
+        height: 3.5rem;
     }
 }

@@ -3,13 +3,13 @@
 import React, { useState } from 'react';
 import './_Header.scss';
 import shelf from './image/shelf.svg';
-import lamp from './image/lamp.svg';
-import computer from './image/computer.svg';
+
+
 import animated from './image/animated.gif';
 
-import skill from './image/skill.svg';
-import engage from './image/engage.svg';
-import creativity from './image/creativity.svg';
+import skills from './image/skills.gif';
+import engage1 from './image/engage1.gif';
+import creativity from './image/creativity.gif';
 const Header = () => {
   const [isCreatingVisible, setCreatingVisible] = useState(false);
   const [isEngagingVisible, setEngagingVisible] = useState(false);
@@ -65,7 +65,7 @@ const Header = () => {
           </h1>
           {isCreatingVisible && (
             <div className="skill-content">
-              <img src={skill} alt="skill Fun" className="skill-image" />
+              <img src={skills} alt="skill Fun" className="skill-image" />
             </div>
           )}
           {isEngagingVisible && (
@@ -75,7 +75,7 @@ const Header = () => {
           )}
           {isInteractiveVisible && (
             <div className="creativity-content">
-              <img src={engage} alt="Creative Fun" className="creativity-image" />
+              <img src={engage1} alt="Creative Fun" className="creativity-image" />
             </div>
           )}
           

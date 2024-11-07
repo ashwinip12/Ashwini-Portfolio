@@ -3,15 +3,15 @@
 
 .card-section {
   height: 110vh;
-  background-color: $header-right;
+  background-color: $projects;
   
 .card__title1{
 
     color: rgb(17, 18, 19);
     padding: 2rem;
     font-size: 34px;
-    margin-right: 1000px;
-    font-family: sans-serif;
+    margin-right: 1050px;
+    font-family: $normal-font;
     font-weight: bold;
     }
   
@@ -21,6 +21,7 @@
     color: rgb(17, 18, 19);
     padding: 1rem;
     font-size: 8px;
+  
   
    
   }
@@ -105,61 +106,74 @@
   color: #919191;
 }
 
+
+
+
 @media (max-width: 768px) {
   .card-section {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
-  .card__img
-  {
+  .card__img {
     height: 150px;
     background-size: cover;
-  
   }
+
   .card__title {
-  font-size: 10px;
-  // font-weight: bold;
-}
+    font-size: 10px;
+  }
 
+  .card__title1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 auto;  
+    text-align: center; 
+    padding: 1rem;  
+    width: 100%;  
+  }
 }
-
 
 @media (max-width: 1024px) {
   .card-section {
-    width: 100%; 
+    width: 100%;
     height: auto;
     padding: 20px;
   }
-  .card__img
-  {
+  .card__img {
     height: 250px;
     background-size: cover;
-  
   }
-  .card__title1 {
-  font-size: 12px;
-  font-weight:normal;
-}
 
+  .card__title1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 auto;  
+    text-align: center; 
+    padding: 1rem;  
+    width: 100%;  
+  }
 }
 
 @media (max-width: 480px) {
   .card-section {
-    width: 100%; 
+    width: 100%;
     height: auto;
   }
-  .card__img
-  {
+  .card__img {
     height: 150px;
     background-size: cover;
-  
   }
+
   .card__title {
-  font-size: 14px;
-  // font-weight: bold;
+    font-size: 14px;
+  }
+
+  .card__title1 {
+    font-size: 1rem;
+    font-weight: normal;
+    margin: 0 auto;  
+    text-align: center;  
+    padding: 1rem;  
+    width: 100%;  
+  }
 }
-}
-
-
-
-

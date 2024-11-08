@@ -5,6 +5,9 @@ import programing from './Images/c-programing.svg';
 import udyamsheel from './Images/udyamsheel.svg';
 import js from './Images/js.svg';
 import fullstack from './Images/fullstack.svg';
+import dbms from './Images/dbms.svg';
+import technical from './Images/technical.svg';
+
 export const Certificate = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const certificates = [
@@ -12,6 +15,8 @@ export const Certificate = () => {
     { title: "C-programing made easy", imgSrc: programing, text: "" },
     { title: "Javascript", imgSrc: js, text: "Learnt javascript for beginners" },
     { title: "udyamsheel-2022", imgSrc: udyamsheel, text: "Participated in udyamsheel to present our ideas" },
+   { title: "Technical Workshop", imgSrc: technical, text: "Participated in Technical Workshop" },
+   { title: "Database Application Development", imgSrc: dbms, text: "Participated in Database Application Development " },
 
   ];
 
@@ -46,3 +51,5 @@ export const Certificate = () => {
     </div>
   );
 };
+
+

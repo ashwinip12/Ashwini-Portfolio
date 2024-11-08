@@ -22,7 +22,7 @@ const Header = () => {
           <p>Ashwini</p>
         </div>
      
-        <img src={shelf} alt="shelf" className="shelf" />
+      
         <div className="computer-screen">
           <img src={animated} alt="Computer" />
         </div>
@@ -41,14 +41,14 @@ const Header = () => {
           <h1 className="header-maintext">
             Venturing into the world of coding, where every interactive project enhances my{' '}
             <span
-              className="highlight cursor-pointer relative"
+              className="highlight"
               onMouseEnter={() => setCreatingVisible(true)}
               onMouseLeave={() => setCreatingVisible(false)}
             >
               skills,
             </span>{' '}
             <span
-              className="highlight cursor-pointer relative"
+              className="highlight "
               onMouseEnter={() => setEngagingVisible(true)}
               onMouseLeave={() => setEngagingVisible(false)}
             >
@@ -56,7 +56,7 @@ const Header = () => {
             </span>{' '}
             and{' '}
             <span
-              className="highlight cursor-pointer relative"
+              className="highlight"
               onMouseEnter={() => setInteractiveVisible(true)}
               onMouseLeave={() => setInteractiveVisible(false)}
             >

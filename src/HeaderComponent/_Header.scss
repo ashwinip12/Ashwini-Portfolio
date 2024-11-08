@@ -16,11 +16,12 @@
     .left-section-top {
       display: flex;
       justify-content: center;
+    
       align-items: flex-start;
 
       p {
-        font-family: "Cookie", cursive;
-        font-weight: bold;
+        font-family:"Cookie", serif;
+        
         font-size: 4rem;
         margin-left: 50px;
 
@@ -31,25 +32,15 @@
       }
     }
 
-    .lamp {
-      width: 100px;
-      margin-left: 400px;
-      margin-top: -110px;
-    }
-
-    .shelf {
-      margin-left: -220px;
-      margin-top: 50px;
-      height: auto;
-      max-width: 200px;
-    }
+  
+   
 
     .computer-screen img {
       width: 100%;
       height: auto;
-      max-width: 400px;
-      margin-left: 203px;
-      margin-top: -120px;
+      max-width: 500px;
+      margin-left: 13px;
+      margin-top: 60px;
       margin-bottom: 100px;
     }
   }
@@ -69,7 +60,7 @@
       gap: 1.2rem;
       font-weight: bold;
       justify-content: center;
-      margin-top: -120px;
+      margin-top: -100px;
       margin-left: 80px;
 
       a {
@@ -106,7 +97,15 @@
         color: #333;
         text-align: center;
       }
-
+.highlight
+{
+ color: #272826;
+ &:hover
+ {
+ color: #d598de;
+ cursor: pointer;
+ }
+}
       .skill-content {
         position: absolute;
         top: -10px;
@@ -128,6 +127,7 @@
       .engage-content {
         position: absolute;
         top: 50px;
+       
         left: 1200px;
         transform: translateX(-50%);
         border-radius: 10px;
@@ -153,9 +153,7 @@
         text-align: center;
         z-index: 10;
 
-        &:hover {
-          color: #5a2362;
-        }
+       
 
         .creativity-image {
           width: 100%;
@@ -170,8 +168,8 @@
 
     .download-resume-button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin-top: 70px;
+      padding: 10px 30px;
       background-color: $primary-color;
       color: #fff;
       text-decoration: none;

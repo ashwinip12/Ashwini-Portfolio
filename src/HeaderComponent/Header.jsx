@@ -1,8 +1,5 @@
-
-
 import React, { useState } from 'react';
 import './_Header.scss';
-import shelf from './image/shelf.svg';
 
 
 import animated from './image/animated.gif';

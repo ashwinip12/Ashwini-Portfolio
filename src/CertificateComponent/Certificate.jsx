@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import "./_Certificate.scss";
 import programing from './Images/c-programing.svg';
-import udyamsheel from './Images/udyamsheel.svg';
+import Udyamsheel from './Images/Udyamsheel.svg';
 import js from './Images/js.svg';
 import fullstack from './Images/fullstack.svg';
 import dbms from './Images/dbms.svg';
@@ -14,7 +14,7 @@ export const Certificate = () => {
     { title: "Internship Certificate", imgSrc:fullstack, text: "completed internship at genesis" },
     { title: "C-programing made easy", imgSrc: programing, text: "" },
     { title: "Javascript", imgSrc: js, text: "Learnt javascript for beginners" },
-    { title: "udyamsheel-2022", imgSrc: udyamsheel, text: "Participated in udyamsheel to present our ideas" },
+    { title: "Udyamsheel-2022", imgSrc: Udyamsheel, text: "Participated in udyamsheel to present our ideas" },
    { title: "Technical Workshop", imgSrc: technical, text: "Participated in Technical Workshop" },
    { title: "Database Application Development", imgSrc: dbms, text: "Participated in Database Application Development " },
 

@@ -20,7 +20,7 @@ export const Project = () => {
         </article>
 
         <article className="card card--2">
-          <a href="https://github.com/manjunath-dalavaye/Trade_track" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/manjunath-dalavaye/Trade_track" target="_blank" rel=" noreferrer">
             <div className="card__img card__img--2"></div>
           </a>
           <div className="card__info">
@@ -30,7 +30,7 @@ export const Project = () => {
         </article>
 
         <article className="card card--3">
-          <a href="https://github.com/ashwinip12/Todo-app" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ashwinip12/Todo-app" target="_blank" rel=" noreferrer">
             <div className="card__img card__img--2"></div>
           </a>
           <div className="card__info">
@@ -40,7 +40,7 @@ export const Project = () => {
         </article>
 
         <article className="card card--4">
-          <a href="https://github.com/ashwinip12/Shortest-Path" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ashwinip12/Shortest-Path" target="_blank" rel="noreferrer">
             <div className="card__img card__img--4"></div>
           </a>
           <div className="card__info">
@@ -51,7 +51,7 @@ export const Project = () => {
         </article>
 
         <article className="card card--5">
-          <a href="https://github.com/ashwinip12/login-signup-page" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/ashwinip12/login-signup-page" target="_blank" rel=" noreferrer">
             <div className="card__img card__img--5"></div>
           </a>
           <div className="card__info">

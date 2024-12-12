@@ -40,7 +40,7 @@
       height: auto;
       max-width: 500px;
       margin-left: 13px;
-      margin-top: 60px;
+      margin-top: 120px;
       margin-bottom: 100px;
     }
   }
@@ -99,10 +99,11 @@
       }
 .highlight
 {
- color: #272826;
+ color: #191818;
  &:hover
  {
- color: #d598de;
+ color:#6d8ebe;
+ 
  cursor: pointer;
  }
 }
@@ -165,26 +166,51 @@
         }
       }
     }
-
+  
     .download-resume-button {
       display: inline-block;
       margin-top: 70px;
       padding: 10px 30px;
-      background-color: $primary-color;
+      background-color: rgb(218, 64, 134);
       color: #fff;
       text-decoration: none;
       border-radius: 5px;
       font-weight: bold;
       text-align: center;
+       margin-bottom: 20px;
       transition: background-color 0.3s ease;
 
       &:hover {
-        background-color: darken($primary-color, 10%);
+        background-color: rgb(223, 50, 108);
       }
     }
-  }
+  
 
  
+
+.view{
+  
+
+.view-resume-button {
+  padding: 10px 15px;
+  font-size: 14px;
+  color: white;
+  background-color: #1160b5;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+
+.view-resume-button:hover {
+  background-color: #0056b3;
+}
+  }
+  }
+  
   @media (max-width: 1024px) {
     flex-direction: column;
 
@@ -228,7 +254,7 @@
 
     .left-section .left-section-top p,
     .header-maintext {
-      font-size: 3rem;
+      font-size: 1rem;
     }
 
     .nav-links {

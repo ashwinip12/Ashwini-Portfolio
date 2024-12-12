@@ -8,7 +8,7 @@ import tailwind from "./Image/tailwind-css-icon.svg";
 import sass from "./Image/sass-icon.svg";
 import javaScript from "./Image/javascript-programming-language-icon.svg";
 import typescript from "./Image/typescript-programming-language-icon.svg";
-import figma from './Image/figma.svg';
+
 const Skill = () => {
   const [activeSection, setActiveSection] = useState("education");
 
@@ -56,7 +56,7 @@ const Skill = () => {
                     alt="TYPESCRIPT"
                   />
                   <img className="skill-image" src={sass} alt="SASS" />
-                  <img className="skill-image" src={figma} alt="Figma" />
+                  
                   <img className="skill-image" src={tailwind} alt="Tailwind" />
 
                   <img className="skill-image" src={react} alt="React" />
@@ -83,7 +83,7 @@ const Skill = () => {
                     <p className="timeline-date">2020-2024</p>
                   </div>
                   <div className="timeline-content">
-                    <p>B.E in Information Science and Engineering-8.76(cgpa)</p>
+                    <p>B.E in Information Science and Engineering-8.68(cgpa)</p>
                   </div>
                 </li>
                 <li className="timeline-item">

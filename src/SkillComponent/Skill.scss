@@ -55,7 +55,7 @@
     position: absolute;
     top: 0; 
     bottom: 0; 
-    left: 300px; 
+    left: 250px; 
     width: 15px;
 
     &:before {
@@ -79,7 +79,7 @@
         background: #CCD5DB;
         display: block;
         position: absolute;
-        top: 24px; 
+        top:24px; 
         bottom: 0; 
         left: 6px;
     }
@@ -163,7 +163,7 @@
 
         .and-text {
             font-family: sans-serif;
-            margin: 0 10px;
+            margin: 20 0px;
             font-weight: bold;
             font-size: 30px;
         }
@@ -196,7 +196,7 @@
     }
 
     .timeline-info {
-        margin-right: -0px;
+        margin-right: 20px;
         white-space: normal;
         font-size: 18px;
     }
@@ -219,7 +219,7 @@
     }
 
     .skills-heading {
-        font-size: 28px; 
+        font-size: 20px; 
     }
 
     .image-container {
@@ -236,18 +236,18 @@
     .timeline-info,
     .timeline-content {
         width: 100%;
-        text-align: left;
+       
     }
 
     .timeline-marker {
         position: relative;
-        left: -19px;
+        left: 119px;
         margin: 0;
     }
 
     .timeline-content {
-        padding-left: 0;
-        margin-left: 0;
+        padding-left: 10;
+        margin-left: 10;
     }
 
     .example-basic .titles-container {
@@ -255,7 +255,7 @@
     }
 
     .skills-heading {
-        font-size: 30px;
+        font-size: 100px;
     }
 
     .image-container {
@@ -263,8 +263,8 @@
     }
 
     .skill-image {
-        width: 5rem; 
-        height: 5rem;
+        width: 2rem; 
+        height: 2rem;
     }
 }
 
@@ -294,7 +294,7 @@
     }
 
     .skills-heading {
-        font-size: 26px; 
+        font-size: 20px; 
     }
 
     .image-container {

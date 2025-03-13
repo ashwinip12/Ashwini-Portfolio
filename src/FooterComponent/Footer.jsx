@@ -1,7 +1,6 @@
 import React from 'react';
 import './_Footer.scss';
-import pp from './images/pp.gif';
-import email from './images/envelope-icon.svg';
+import footergif from "./images/footergif.gif";
 import linkedin from './images/linkedin-app-icon.svg';
 import instagram from './images/ig-instagram-icon.svg';
 
@@ -24,7 +23,7 @@ const Footer = () => {
             </a>
           </div>
         </div>
-        <img src={pp} alt="Profile" className="footer-img3" />
+        <img src={footergif} alt="Profile" className="footer-img3" />
       </div>
     </div>
   );

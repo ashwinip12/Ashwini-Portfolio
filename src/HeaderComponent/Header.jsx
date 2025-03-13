@@ -79,9 +79,10 @@ const Header = () => {
             </div>
           )}
           
-          <a href={`${process.env.PUBLIC_URL}/Ashwini _P- Resume.pdf`} download className="download-resume-button">
+          <a href={`${process.env.PUBLIC_URL}/Ashwini - Resume.pdf`} download className="download-resume-button">
             Download Resume
           </a>
+          
         </div>
       </div>
     </div>

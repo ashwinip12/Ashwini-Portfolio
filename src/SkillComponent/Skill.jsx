@@ -4,7 +4,7 @@ import html from "./Image/html.svg";
 import css from "./Image/css-icon.svg";
 import react from "./Image/react-js-icon.svg";
 import redux from "./Image/redux-icon.svg";
-import tailwind from "./Image/tailwind-css-icon.svg";
+
 import sass from "./Image/sass-icon.svg";
 import javaScript from "./Image/javascript-programming-language-icon.svg";
 import typescript from "./Image/typescript-programming-language-icon.svg";
@@ -57,7 +57,7 @@ const Skill = () => {
                   />
                   <img className="skill-image" src={sass} alt="SASS" />
                   
-                  <img className="skill-image" src={tailwind} alt="Tailwind" />
+                  
 
                   <img className="skill-image" src={react} alt="React" />
                   <img className="skill-image" src={redux} alt="Redux" />
@@ -70,10 +70,10 @@ const Skill = () => {
                   <div className="timeline-marker"></div>
                   <div className="timeline-info">
                     <h3 className="timeline-title">Intern</h3>
-                    <p className="timeline-date">2024- Present</p>
+                    <p className="timeline-date">july 2024-november 2024</p>
                   </div>
                   <div className="timeline-content">
-                    <p>Interning at ivoyant</p>
+                    <p>Intern at ivoyant</p>
                   </div>
                 </li>
                 <li className="timeline-item">
